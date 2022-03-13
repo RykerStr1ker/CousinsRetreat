@@ -7,26 +7,47 @@
 <link rel="stylesheet" type="text/css" href="../reset-meyer.css">
 <link rel="icon" type="Images/fv.jpg" href="Images/fv.ico">
 <style type="text/css">
-
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-image: url('Images/bg.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	margin:10px;
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	z-index: 1
 }
 .box-shadow{
 box-shadow:5px 5px 10px black;
 }
-h4 {
-	text-align: center;
-}
+.credit {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				text-align: right;
+				text-shadow: 2px 2px 2px #000;
+				color: #eee;
+				line-height: 1.1em;
+				font-size: 1.1em;
+				z-index: 2;
+			}
+				main {
+				text-align: center;
+				padding: 25px;
+				background: #eee;
+				z-index: 1;
+			}
 </style>
 <title>Cousins Retreat</title>
 </head>
 <body>
-<div class="window" style="position : absolute; width: 100%; height: 100%; box-shadow: 5px 5px 10px black; margin: auto; width: 350px">
+<div class="window" style="box-shadow: 5px 5px 10px black; margin: auto; width: 350px">
   <div class="title-bar">
     <div class="title-bar-text">Welcome to 2c2f.net</div>
     <div class="title-bar-controls">
@@ -36,14 +57,27 @@ h4 {
     </div>
   </div>
   <div class="window-body">
-    <h4>We host a private Minecraft Server for Minecraft version 1.12.2. Join today! (If you join our Discord Server and get permission from both owners)</h4>
-<a href="https://www.youtube.com/channel/UCpKrDDb3esh1kkrLYoh301g">	
-	<img src="Images/yt.png">  
+  <h3>2c2f.net</h3>
+	<q><b><i>If you’re lucky enough to have a cousin or two, you know how precious they can be in your life. For those with and without siblings, they can act as a sort of surrogate sibling—either as an older mentor you look up to, a peer you relate to, or a younger sibling that you get to dote on. The best part about these semi-siblings is that you get to make memories with them over special holidays and vacations, but don’t have to, you know, share your toys with them day-to-day.</i> -Jessica Leigh Mattern</b></q>
+	<br>
+	<br>
+<a href="https://www.youtube.com/channel/UCpKrDDb3esh1kkrLYoh301g">
+	<img src="Images/youtube.svg"
+	width="64px"
+	height="64px"/> 	
 </a>
 <a href="https://discord.gg/C8kjZDr4">	
-	<img src="Images/dc.jpg">  
+	<img src="Images/discord.svg"
+	width="64px"
+	height="64px"/>  
 </a>
   </div>
 </div>
+<div class="credit">
+			Image by:<br>
+			Allen Milazzo<br>
+			<i>Timeless</i><br>
+			13 Feb 2022
+		</div>
 </body>
 </html>
